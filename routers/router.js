@@ -10,9 +10,10 @@ router.get('/', (req,res)=>{
     controller.getAllCats(req,res);
 });
 
-router.delete('/', (req,res)=>{
-    controller.getAllCats(req,res);
+router.delete('/:id', (req, res) => {
+    controller.deleteCat(req, res);
 });
+
 
 
 module.exports = router;
